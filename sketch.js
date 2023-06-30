@@ -23,7 +23,7 @@ function draw() {
   //text('x: ${andarX}, y : ${andarY}',400,500)
 
   
-  //keyPressed()
+  // evento de reiniciar
   if (andarX=== tamanho *8 && andarY===tamanho*8){
       rect(160,160,230,230)
       textSize(35)
@@ -33,7 +33,7 @@ function draw() {
       restart.mousePressed(resetGame)
       noLoop()
     }
-
+// sistema de colider
   if (andarX <0){
     andarX=0
   }
@@ -57,6 +57,7 @@ function resetGame(){
   restart.remove()
   loop()
 }
+//eventos de botao
 function keyPressed(){
   if (keyIsDown(UP_ARROW)){
     //andar para cima
